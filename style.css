@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(110deg, #e8e192 , #026620);
+  color: white ;
+  line-height: 1.6;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 50px;
+  position: fixed;
+  z-index: 5;
+  backdrop-filter: blur(10px);
+  height: 75px;
+}
+.nav-head {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav-link {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.sec-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-left: 150px;
+}
+
+.profile-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+.profile-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  animation: fadeInUp 2.5s ease forwards;
+}
+
+.highlight {
+  color: bisque ;
+}
+
+.btn {
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #ff8a00, #e52e71);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* animation */
+@keyframes fadeInUp{
+    0%{
+        opacity:0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.home-image {
+  height: 300px;
+  width: 300px;
+  margin-right: 150px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  overflow: hidden;
+}
+.home-image img {
+  height: 100%;
+}
+
+.sec-2{
+    padding: 100px 50px;
+    background: 3px solid rgba(255, 255, 255, 0.3);;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section-line{
+    background: linear-gradient(45deg, #ff8a00, #e52e71);
+    height: 4px;
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 2px;
+}
+
+.about-content{
+    
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-content p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.stats{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.stats-item{
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.stats-item h3{
+    font-size: 2.5rem;
+    color: smokewhite;
+    margin-bottom: 10px;
+}
+
+.stats-item:hover{
+    transform: translateY(-10px)
+}
+
+h1{
+    opacity: 0;
+     animation: fadein 1s ease  forwards;
+} 
+.para{
+    opacity: 0;
+     animation: fadein 1s ease 0.3s forwards;
+} 
+.btn{
+    opacity: 0;
+     animation: fadein 1s ease 0.6s forwards;
+}
+
+/*skills - section */
+
+.skills {
+    padding: 100px 50px;
+}
+
+.skills-cont{
+max-width: 650px;
+margin:0 auto;
+margin-bottom: 10px;
+}
+
+.skill-item{
+margin-bottom: 15px;
+}
+
+.skill-info{
+display: flex;
+justify-content: space-between;
+font-weight: bold;
+}
+
+.skill-bar{
+height: 12px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 8px;
+}
+
+.progress-bar{
+ background: linear-gradient(45deg, #ff8a00, #e52e71);
+ height:98%;
+ border-radius: 6px;
+ width: 10px;
+}
+
+.html{
+    animation: fillhtml 5s ease forwards;
+}
+
+
+@keyframes fillhtml {
+
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.DSA{
+    animation: fillDSA 5s ease forwards;
+}
+
+
+@keyframes fillDSA {
+
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+.python{
+    animation: fillpython 5s ease forwards;
+}
+
+
+@keyframes fillpython {
+
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 87%;
+    }
+}
+
+.javascript{
+    animation: filljavascript 5s ease forwards;
+}
+
+
+@keyframes filljavascript {
+
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+
+
+
+
